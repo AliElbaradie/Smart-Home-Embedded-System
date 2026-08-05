@@ -110,13 +110,7 @@ The system also communicates with:
 
 The complete Smart Home application was designed, tested and validated using **Proteus Professional** before deployment on physical hardware.
 
-### Initial System
-
-<p align="center">
-<img src="images/proteus_overview.png" width="85%">
-</p>
-
-### Extended System
+### System Simulation
 
 <p align="center">
 <img src="images/simulation_running.png" width="85%">
@@ -157,6 +151,7 @@ The ECU layer contains reusable drivers for:
 - Push Button
 - Relay
 - DC Motor
+- 7-Segment
 - Character LCD
 - Keypad
 
