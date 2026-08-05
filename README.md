@@ -167,7 +167,7 @@ Simulation while running:
 
 ---
 
-## Embedded Driver Library
+## Diploma Driver Library
 
 In addition to the Smart Home application, this repository contains the embedded software developed throughout the **Interfacing with 8-Bit Microcontrollers** module.
 
@@ -231,4 +231,6 @@ The ECU layer contains reusable drivers for external hardware components:
 **Ali Elbaradie**
 
 M.Sc. Mechanical Engineering (Mechatronics)
+
 University of Duisburg-Essen
+
