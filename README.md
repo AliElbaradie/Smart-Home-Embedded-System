@@ -16,7 +16,7 @@ The project demonstrates the development of a Smart Home embedded system based o
 
 The Smart Home application uses the **MPLAB Code Configurator (MCC)** for peripheral initialization on the PIC18F46K20.
 
-Besides the final project, this repository also contains the **self-written embedded drivers** developed throughout the diploma. These drivers are located in **`Diploma/application.X/`** and demonstrate manual implementation of embedded peripherals without using MCC.
+Besides the final project, this repository also contains the **self-written embedded drivers** developed throughout the diploma. These drivers are located in **`diploma/application.X/`** and demonstrate manual implementation of embedded peripherals without using MCC.
 
 ---
 
