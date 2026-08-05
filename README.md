@@ -4,6 +4,8 @@
 
 **280-Hour Embedded Systems Diploma**
 
+**Completed: September 2024**
+
 ---
 
 ## Description
@@ -114,17 +116,29 @@ Smart-Home-Embedded-System/
 │   ├── application.X/
 │   └── Proteus/
 │
-├── Diploma/
-│   └── application.X/
-│       ├── GPIO
-│       ├── ADC
-│       ├── UART
-│       ├── SPI
-│       ├── I2C
-│       ├── EEPROM
-│       ├── LCD
-│       ├── Timer
-│       └── ...
+Diploma/
+└── application.X/
+│   ├── MCAL_Layer/
+│   │   ├── GPIO
+│   │   ├── Interrupt
+│   │   ├── Timer0
+│   │   ├── Timer1
+│   │   ├── Timer2
+│   │   ├── Timer3
+│   │   ├── ADC
+│   │   ├── CCP
+│   │   ├── USART
+│   │   ├── MSSP_I2C
+│   │   ├── MSSP_SPI
+│   │   └── EEPROM
+│   │
+│   └── ECU_Layer/
+│       ├── LED
+│       ├── Button
+│       ├── Relay
+│       ├── DC Motor
+│       ├── Character LCD
+│       └── Keypad
 │
 ├── images/
 │   ├── proteus_overview.png
@@ -153,28 +167,43 @@ Simulation while running:
 
 ---
 
-## Diploma Driver Library
+## Embedded Driver Library
 
-Besides the Smart Home application, this repository also contains the peripheral drivers developed during the Embedded Systems Diploma.
+In addition to the Smart Home application, this repository contains the embedded software developed throughout the **Interfacing with 8-Bit Microcontrollers** module.
 
-Unlike the Smart Home project, which uses **MPLAB Code Configurator (MCC)**, the drivers inside **`Diploma/application.X/`** were implemented manually to gain a deeper understanding of low-level embedded software development.
+The source code follows a layered architecture consisting of:
 
-Examples include:
+- **MCAL (Microcontroller Abstraction Layer)** for low-level peripheral drivers
+- **ECU Layer** for reusable hardware components and application devices
+
+The Smart Home application uses the **MPLAB Code Configurator (MCC)** for peripheral initialization on the PIC18F46K20.
+
+The `Diploma/application.X` project, however, contains manually developed embedded drivers and reusable modules created during the diploma to gain a deeper understanding of low-level embedded software development.
+
+### MCAL Layer
+
+The MCAL layer contains peripheral drivers for:
 
 - GPIO
-- Interrupts
-- Timers
-- ADC
-- UART
-- SPI
-- I²C
-- EEPROM
-- LCD
-- Keypad
-- PWM
 - External Interrupts
+- Timer0–Timer3
+- ADC
+- CCP (Capture/Compare/PWM)
+- USART
+- MSSP (I²C)
+- MSSP (SPI)
+- Internal EEPROM
 
-These drivers were developed as part of the coursework and are included as additional learning material.
+### ECU Layer
+
+The ECU layer contains reusable drivers for external hardware components:
+
+- LED
+- Push Button
+- Relay
+- DC Motor
+- Character LCD
+- Keypad
 
 ---
 
@@ -184,12 +213,16 @@ These drivers were developed as part of the coursework and are included as addit
 - MPLAB X IDE
 - MPLAB Code Configurator (MCC)
 - PIC18F46K20
+- PIC18F4620
 - Proteus Professional
+- Layered Embedded Architecture
+- MCAL
+- ECU Layer
 - UART
-- I²C (MSSP)
+- I²C
+- SPI
 - EEPROM
 - RTC
-- Embedded Systems
 
 ---
 
